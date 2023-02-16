@@ -1,0 +1,244 @@
+html {
+  background: rgb(112, 128, 144);
+  background: linear-gradient(0deg, rgb(143, 191, 184) 0%, rgba(255, 255, 255, 1) 49%, rgb(146, 142, 141) 100%, rgba(255, 255, 255, 1) 100%, rgb(146, 138, 134) 100%, rgba(237, 239, 241, 1) 100%);
+  /* background: rgb(112,128,144);
+    background: linear-gradient(0deg, rgba(112,128,144,1) 0%, rgba(255,255,255,1) 100%, rgba(146,229,255,1) 100%); */
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+#appTitle {
+  font-weight: 600;
+  margin: 30px;
+}
+
+img {
+  margin-left: 50px;
+  border-radius: 5%;
+  width: 500px;
+  height: 300px;
+  margin-left: 40px;
+  position: relative;
+  left: 50px;
+  display: flex;
+  flex: wrap;
+  flex-wrap: wrap;
+ 
+}
+
+nav {
+  font-size: larger;
+}
+
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+
+h3 {
+  width: 100%;
+  text-align: left;
+  color: #2a8ded;
+  font-size: 1.6em;
+  white-space: nowrap;
+}
+
+
+input,
+button {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+button {
+  width: 225px;
+  height: 80px;
+  position: center;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(#18588d);
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  color: #020202;
+  font-size: 40px;
+  letter-spacing: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+button:after {
+  content: "";
+  position: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg,
+
+    );
+  background-size: 200% 100%;
+  background-position: 165% 0;
+  transition: 0.7s;
+}
+
+button:hover:after {
+  background-position: -20% 0;
+}
+
+button:hover {
+  box-shadow: 15px 30px 32px rgba(0, 0, 0, 0.25);
+  transform: translateY(-10px);
+}
+
+/*Top card with image and info*/
+#head-card {
+  font-size: 1.2em;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 25px;
+  padding: 1em;
+  margin: 1em 0;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  justify-self: center;
+  align-self: center;
+}
+
+#bio {
+  font-size: 1.2em;
+  color: black;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 25px;
+  padding: 1em;
+  margin: 1em 0;
+  display: flex;
+  text-align: center;
+  margin: 0;
+  justify-self: left;
+  align-self: flex-start;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  left: 40px;
+  top: 0px;
+}
+
+.singlecard {
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  
+}
+.card-title {
+  color:rgba(255, 255, 255, 1);
+  font-size: 25px;
+}
+.card-text{
+  color:rgba(255, 255, 255, 1);
+  font-size: 15px
+}
+.card-link{
+  color:rgba(255, 255, 255, 1);
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#myBtn {
+  font-size: medium;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /*Hidden by default */
+  position: fixed; /*Stay in place */
+  z-index: 1; /*Sit on top */
+  padding-top: 100px; /*Location of the box*/
+  left: 0;
+  top: 0;
+  width: 100%; /*Full width */
+  height: 100%; /*Full height */
+overflow: auto; /*Enable scroll if needed*/
+ background-color: rgb(0,0,0); /* Fallback color */
+ background-color: rgba(0,0,0,0.4); /*Black w/ opacity*/
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modal-header {
+  padding: 2px 16px;
+  background-color: #00d1b2;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+#modal-footer {
+  color: white;
+  padding: 2px 16px;
+  background-color: #00d1b2;
+}
+
+#notifyBtn:hover {
+  border-width: 4px;
+  cursor: pointer;
+}
+
